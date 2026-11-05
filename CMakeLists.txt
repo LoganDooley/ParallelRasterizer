@@ -4,9 +4,6 @@ project(ParallelRasterizer
     DESCRIPTION "Rasterizer using parallelized instructions"
     LANGUAGES CXX)
 
-add_executable(ParallelRasterizer src/main.cpp)
+add_subdirectory(core)
 
-set_target_properties(ParallelRasterizer PROPERTIES
-    CXX_STANDARD 20
-    CXX_STANDARD_REQUIRED ON
-    CXX_EXTENSIONS OFF)
+add_subdirectory(apps/viewer)
