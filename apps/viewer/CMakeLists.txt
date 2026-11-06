@@ -1,3 +1,3 @@
 add_executable(viewer main.cpp)
 
-target_link_libraries(viewer PRIVATE core)
+target_link_libraries(viewer PRIVATE core platform)

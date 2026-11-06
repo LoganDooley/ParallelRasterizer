@@ -6,4 +6,10 @@ project(ParallelRasterizer
 
 add_subdirectory(core)
 
+add_subdirectory(platform)
+
 add_subdirectory(apps/viewer)
+
+set(GLFW_BUILD_DOCS OFF)
+set(GLFW_INSTALL OFF)
+add_subdirectory(external/glfw)
