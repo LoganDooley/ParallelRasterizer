@@ -7,4 +7,6 @@ target_include_directories(platform PUBLIC include)
 # This should be public since public header files may use c++ 20 features
 target_compile_features(platform PUBLIC cxx_std_20)
 
-target_link_libraries(platform PRIVATE glfw)
+target_compile_definitions(platform PRIVATE WIN32_LEAN_AND_MEAN NOMINMAX)
+
+target_link_libraries(platform PRIVATE glfw core gdi32)

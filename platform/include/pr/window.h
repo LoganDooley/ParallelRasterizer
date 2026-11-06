@@ -3,6 +3,7 @@
 struct GLFWwindow;
 
 namespace pr {
+    class Image;
     class GLFWContext;
 
     class Window {
@@ -16,6 +17,8 @@ namespace pr {
         Window& operator=(Window&&) = delete;
 
         bool shouldClose() const;
+
+        void present(const Image& image);
 
     private:
         GLFWwindow* m_glfwWindow = nullptr;
