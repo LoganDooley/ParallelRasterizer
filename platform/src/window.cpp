@@ -50,4 +50,14 @@ namespace pr{
 
         ReleaseDC(hwnd, hdc);
     }
+
+    void Window::setTitle(const char *title) const
+    {
+        glfwSetWindowTitle(m_glfwWindow, title);
+    }
+
+    void Window::getSize(int& width, int& height) const
+    {
+        glfwGetFramebufferSize(m_glfwWindow, &width, &height);
+    }
 }

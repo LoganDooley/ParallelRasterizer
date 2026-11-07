@@ -1,6 +1,7 @@
 add_library(core STATIC 
     src/core.cpp
-    src/image.cpp)
+    src/image.cpp
+    src/raster.cpp)
 
 target_include_directories(core PUBLIC include)
 

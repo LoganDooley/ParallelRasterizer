@@ -17,6 +17,8 @@ namespace pr {
         size_t width() const { return m_width; }
         size_t height() const { return m_height; }
 
+        void drawPixel(int x, int y, uint8_t r, uint8_t g, uint8_t b, uint8_t a);
+
     private:
         static uint32_t packColor(uint8_t r, uint8_t g, uint8_t b, uint8_t a);
 

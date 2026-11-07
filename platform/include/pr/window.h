@@ -20,6 +20,10 @@ namespace pr {
 
         void present(const Image& image);
 
+        void setTitle(const char* title) const;
+        
+        void getSize(int& width, int& height) const;
+
     private:
         GLFWwindow* m_glfwWindow = nullptr;
     };
